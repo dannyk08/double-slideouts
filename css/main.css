@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.slideout-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+
+  /*
+  Check out js/slideout.js for style manipulation
+  gets rid of both sidebars displaying at narrow/mobile widths
+  z-index: 0;
+  */
+  z-index: -1;
+}
+
+#left-menu.slideout-menu {
+  left: 0;
+}
+#right-menu.slideout-menu {
+  left: auto;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel, {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+/*
+  everything else is custom styles
+*/
+
+.main-content {
+  background: #ddd;
+  height: inherit;
+  width: inherit;
+}
+
+.left-vertical-menu,
+.right-vertical-menu {
+  min-width: 100%;
+}
+
+.toggle-button {
+  background: #2ec38f !important;
+  color: #fff !important;
+}
+.toggle-button:hover {
+  background: #249a71 !important;
+}

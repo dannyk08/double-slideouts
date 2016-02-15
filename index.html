@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Double Slideout</title>
+
+    <!-- relying on semantic ui styles to avoid classes and ids confusion -->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.css"></link>
+    <link type="text/css" rel="stylesheet" href="css/main.css"></link>
+
+  </head>
+
+  <body>
+    <!-- both menu should be at #panel div scope -->
+    <!-- ... haven't experimented with other layouts yet-->
+    <nav id="left-menu">
+      <div class="ui vertical menu left-vertical-menu">
+        <div class="item">
+          <h2>Left Menu</h2>
+        </div>
+
+        <div class="item">
+          Your left sidebar content here
+        </div>
+
+      </div>
+    </nav>
+
+    <nav id="right-menu">
+      <div class="ui vertical menu right-vertical-menu">
+        <div class="item">
+          <h2>Right Menu</h2>
+        </div>
+
+        <div class="item">
+          Your right sidebar content here
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- visible content -->
+    <main class="main-content" id="panel">
+      <header class="ui menu">
+        <div class="item toggle-button" id="toggle-left">
+          <i class="sidebar icon"></i>
+        </div>
+
+        <div class="item">
+          <h1>Navbar</h1>
+        </div>
+
+        <div class="right menu">
+          <div class="item toggle-button" id="toggle-right">
+            <i class="sidebar icon"></i>
+          </div>
+        </div>
+
+      </header>
+
+      <section class="ui two column centered grid main-body">
+        <div class="column">
+
+          <h1>Main body</h1>
+
+          <div class="">
+            <p>
+              Austin PBR&B synth schlitz, banh mi ethical hammock. Chambray austin direct trade, quinoa crucifix +1 vinyl food truck. Narwhal street art asymmetrical, farm-to-table kickstarter banh mi fixie church-key selfies roof party ethical butcher squid ennui kale chips. Kitsch craft beer chambray, polaroid man bun narwhal franzen tote bag quinoa paleo. Tumblr sartorial pitchfork typewriter etsy fanny pack. Mustache pickled mlkshk umami truffaut, 8-bit pitchfork wayfarers letterpress. Umami squid VHS, normcore brunch fanny pack brooklyn microdosing.
+            </p>
+
+            <p>
+              Pour-over fixie tofu polaroid vegan knausgaard. DIY vice raw denim meggings shoreditch. Gastropub tofu hashtag slow-carb artisan, polaroid kickstarter YOLO. Waistcoat +1 paleo normcore church-key. Vinyl squid godard banjo flannel chillwave, swag ugh plaid fingerstache mustache. Cornhole kinfolk tumblr, YOLO helvetica vegan church-key you probably haven't heard of them franzen brunch raw denim lumbersexual kombucha. Kale chips williamsburg health goth cliche tacos shoreditch fap wayfarers mumblecore
+            </p>
+
+            <h3 class="">
+              <i>- Courtesy of Hipster Ipsum</i>
+            </h3>
+
+          </div>
+        </div>
+
+      </section>
+
+
+    </main>
+
+    <script type="text/javascript" src="js/slideout.min.js"></script>
+    <script type="text/javascript" src="js/slideouts.js"></script>
+
+  </body>
+
+</html>
