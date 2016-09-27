@@ -26,7 +26,7 @@
       leftMenu.style.zIndex = '0';
 
       leftSlideout.on('close', function () {
-        lefttMenu.style.zIndex = '-1';
+        leftMenu.style.zIndex = '-1';
       });
 
   });
